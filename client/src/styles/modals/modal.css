@@ -1,0 +1,58 @@
+.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.modalContainer {
+  max-width: 50vw;
+  width: 100%;
+  max-height: 35vw;
+  height: 100%;
+  position: fixed;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+  text-align: center;
+  z-index: 50;
+  animation-name: dth;
+  animation-duration: 0.15s;
+  background: #fff;
+  border: 1px solid black;
+}
+
+@keyframes dth {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.errorModal {
+  z-index: 1000;
+  background-color: #FFBDBD;
+}
+
+.errorTitle {
+  font-size: 2.6em;
+  margin: 2vw 0;
+  font-weight: "bold";
+}
+
+.errorMessage {
+  font-size: 1.9em;
+  margin: 0 auto;
+  text-align: center;
+  width: 80%;
+}
+
+.okBtn {
+  font-size: 2em;
+  background: #fff;
+  padding: 0.5vw 2vw;
+  margin-top: 2vw;
+}
+
+.okBtn:hover {
+  background: #F36161;
+}
