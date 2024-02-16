@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.articlelate.restapi.IntegrateTest
+-------------------------------------------------------------------------------
+Tests run: 15, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 28.857 s - in com.articlelate.restapi.IntegrateTest
