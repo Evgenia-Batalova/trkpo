@@ -1,0 +1,50 @@
+.menu {
+  width: 14%;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.avatar {
+  display: block;
+  width: 80%;
+  min-height: 6vw;
+  min-width: 62%;
+  margin: 0 auto;
+  border-radius: 20%;
+  border: 3px solid #a32a2a;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.avatar img {
+  border-radius: 20%;
+}
+
+.notificationsIcon {
+  width: 35%;
+  position: absolute;
+  background-color: #FFF;
+  border-radius: 100%;
+  right: 5%;
+  top: 0%;
+  cursor: pointer;
+}
+
+.menuButton {
+  cursor: pointer;
+  background-color: #FFBDBD;
+  margin-bottom: 2vw;
+}
+
+.menuButton:hover {
+  background-color: #FD7676;
+}
+
+.exit {
+  width: 14%;
+  position: absolute;
+  bottom: 5%;
+  left: 5%; 
+}

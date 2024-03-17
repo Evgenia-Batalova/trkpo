@@ -1,0 +1,87 @@
+.editUser {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.editUserAvatar {
+  width: 35%;
+}
+
+.editUserAvatar img {
+  border-radius: 20%;
+  border: 3px solid #a32a2a;
+  width: 80%;
+}
+
+.newAvatarBtn {
+  background-color: #E1B053;
+  padding: 0.4vw;
+  font-size: 1.1em;
+  cursor: pointer;
+  margin-top: 0.5vw;
+  border: 1px solid black;
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.editUserInformation {
+  width: 65%;
+}
+
+.editUserInformation img {
+  width: 80%;
+  display: block;
+  margin: 0 auto 1vw;
+}
+
+.editUserInformation input {
+  display: block;
+  margin: 0 auto 1vw;
+  width: 50%;
+  height: 2vw;
+  padding: 0.3vw;
+  font-size: 1.2em;
+  background-color: #D9D9D9;
+  border-radius: 0.3vw;
+}
+
+.checkId {
+  padding: 0.3vw 0.5vw;
+  font-size: 1em;
+  background: white;
+  border-radius: 1vw;
+  cursor: pointer;
+}
+
+.editDescription {
+  width: 100%;
+  margin-top: 1.5vw;
+  border: 1px solid black;
+  height: 10vw;
+  max-height: 10vw;
+  min-height: 10vw;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 1vw;
+  font-size: 1.3em;
+  overflow: auto;
+}
+
+.confirmUserChanges {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 4vw;
+}
+
+.confirmUserChanges button {
+  padding: 0.3vw 1vw;
+  font-size: 1.2em;
+  margin: 0 1.5vw;
+  background-color: #E1B053;
+  cursor: pointer;
+  border-radius: 0.5vw;
+}
