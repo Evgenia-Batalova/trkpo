@@ -1,0 +1,25 @@
+name: bigthree-frontend-test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  frontend-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Load project code
+      uses: actions/checkout@v3
+
+    - name: Set up Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+        cache: 'npm'
+        cache-dependency-path: '**/package-lock.json'
+
+    - name: Build and test project
+      run:  cd /home/runner/work/trkpo/trkpo/client ; npm install ; npm run build
+      
