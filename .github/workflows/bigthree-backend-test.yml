@@ -23,4 +23,5 @@ jobs:
       run:  cd /home/runner/work/trkpo/trkpo/server/restapi ; echo -e "DB_URL=jdbc:postgresql://localhost:5432/articlelate\nUSER=runner\nPASS=postgres" > .env ; echo -e "DB_URL=jdbc:postgresql://localhost:5432/invDB\nUSER=runner\nPASS=postgres" > .testEnv
       
     - name: Build and test project
-      run:  cd /home/runner/work/trkpo/trkpo/server/restapi ; mvn package
+      run:  cd /home/runner/work/trkpo/trkpo/server/restapi ; mvn test
+      
