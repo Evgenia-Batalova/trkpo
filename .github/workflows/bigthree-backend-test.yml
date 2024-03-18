@@ -1,0 +1,26 @@
+name: bigthree-backend-test
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  backend-test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Load project code
+      uses: actions/checkout@v3
+    
+    - name: Set up JDK
+      uses: actions/setup-java@v3
+      with:
+          java-version: '19'
+          distribution: 'temurin'
+      
+    - name: Create .env file
+      run:  cd /home/runner/work/trkpo/trkpo/server/restapi ; echo -e "DB_URL=jdbc:postgresql://localhost:5432/articlelate\nUSER=runner\nPASS=postgres" > .env ; echo -e "DB_URL=jdbc:postgresql://localhost:5432/invDB\nUSER=runner\nPASS=postgres" > .testEnv
+      
+    - name: Build and test project
+      run:  cd /home/runner/work/trkpo/trkpo/server/restapi ; mvn package
